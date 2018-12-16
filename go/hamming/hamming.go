@@ -4,14 +4,15 @@ import "errors"
 
 //Distance is used for this example
 func Distance(a, b string) (int, error) {
-	count := 0
 
 	if len(a) != len(b) {
-		return -1, errors.New("The inputs must be the same length")
+		return 0, errors.New("the inputs must be the same length")
 	}
 
-	for i, c := range a {
-		if (string(c)) != (string(b[i])) {
+	count := 0
+
+	for i := range a {
+		if a[i] != b[i] {
 			count++
 		}
 	}
