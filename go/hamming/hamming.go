@@ -9,7 +9,7 @@ func Distance(a, b string) (int, error) {
 		return 0, errors.New("the inputs must be the same length")
 	}
 
-	count := 0
+	var count int
 
 	for i := range a {
 		if a[i] != b[i] {
