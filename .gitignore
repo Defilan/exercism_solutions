@@ -1,1 +1,7 @@
 .exercism
+bin
+bin/*
+obj
+obj/*
+.editorconfig
+*.csproj
