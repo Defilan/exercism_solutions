@@ -4,9 +4,6 @@ public class SpaceAge
 {
     public SpaceAge(int seconds)
     {
-       //TimeSpan t = TimeSpan.FromSeconds( secs );
-       TimeSpan time = TimeSpan.FromSeconds(seconds);
-       return time.Days;
     }
 
     public double OnEarth()
